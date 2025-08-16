@@ -10,7 +10,7 @@ const app: Application = express();
 const server = http.createServer(app);
 const io = new SocketIoServer(server);
 
-const PORT = 3001;
+const PORT = 8081;
 
 app.get("/", (req: Request, res: Response) => {
   res.json({ message: "Server is running" });
